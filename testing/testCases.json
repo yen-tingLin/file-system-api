@@ -2,14 +2,14 @@
   "testCase_1": {
     "method": "GET",
     "deploy": "Docker",
-    "url": "http://localhost:3000/files/root/usr/aabb/test.txt?orderBy=size&orderByDirection=Descending&filterByName=Cathy",
+    "url": "http://localhost:3000/file/root/usr/aabb/test.txt?orderBy=size&orderByDirection=Descending&filterByName=Cathy",
     "result": "finally you are here !"
   },
 
   "testCase_2": {
     "method": "GET",
     "deploy": "Docker",
-    "url": "http://localhost:3000/files/root/usr/aabb?orderBy=size&orderByDirection=Descending&filterByName=Cathy",
+    "url": "http://localhost:3000/file/root/usr/aabb?orderBy=size&orderByDirection=Descending&filterByName=Cathy",
     "result": {
       "isDirectory": true,
       "files": ["demo.html", "test.txt"]
@@ -19,7 +19,7 @@
   "testCase_3": {
     "method": "GET",
     "deploy": "Docker",
-    "url": "http://localhost:3000/files/root/usr/aabb?orderBy=size&orderByDirection=Descending&filterByName=Mandy",
+    "url": "http://localhost:3000/file/root/usr/aabb?orderBy=size&orderByDirection=Descending&filterByName=Mandy",
     "result": {
       "status": "failed",
       "message": "Invalid Query"
@@ -29,7 +29,7 @@
   "testCase_4": {
     "method": "GET",
     "deploy": "Docker",
-    "url": "http://localhost:3000/files/root/usr/profile?orderBy=size&orderByDirection=Descending&filterByName=Mimi",
+    "url": "http://localhost:3000/file/root/usr/profile?orderBy=size&orderByDirection=Descending&filterByName=Mimi",
     "result": {
       "status": "failed",
       "message": "Invalid File"
